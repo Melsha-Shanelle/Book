@@ -1,0 +1,65 @@
+.big-font {
+    font-size:30px !important;
+    font-weight: bold;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px #000000; 
+}
+.medium-font {
+    font-size:20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+.stApp {
+    background-image: url('https://raw.githubusercontent.com/Melsha-Shanelle/Mood-Reads/c798d078110c1ef384d51b22e950b046f94c4026/1640615941962-2.jpeg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.title h1{
+    text-align: center;
+    color: #7F00FF;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.title img {
+    height: 50px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+/* Style adjustments for radio buttons */
+div.row-widget.stRadio > div {
+    flex-direction: row;
+    align-items: stretch;
+}
+
+/* Style adjustments for radio button labels */
+div.row-widget.stRadio > div[role="radiogroup"] > label[data-baseweb="radio"] {
+ background-color: #f39511;
+ padding-right: 10px;
+ padding-left: 4px;
+ padding-bottom: 3px;
+ margin: 4px;
+}
+
+.stTextInput label, .stNumberInput label {
+    font-size:30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+.stTextInput label, .stNumberInput label {
+    font-size:30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.stSelectbox label, .css-2trqyj label {
+    font-size:30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+
+
