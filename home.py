@@ -63,7 +63,7 @@ def show_emotion_input_page():
     
     st.markdown('<div class="medium-font">How would you like to input your emotion?</div>', unsafe_allow_html=True)
     
-    option = st.radio("", ('Use Facial Expression', 'Select an Emotion'))
+    option = st.radio("Choose input method", ('Use Facial Expression', 'Select an Emotion'), label_visibility="collapsed")
 
     if option == 'Use Facial Expression':
         captured_image = st.camera_input("Take a picture")
@@ -91,7 +91,7 @@ def show_emotion_input_page():
         col, buffer_right = st.columns([2, 8])
         with col:
         
-            emotion = st.selectbox("", ['sad', 'happy', 'angry', 'neutral'])
+            emotion = st.selectbox("Select emotion", ['sad', 'happy', 'angry', 'neutral'], label_visibility="collapsed")
             if st.button('Submit Selected Emotion'):
                st.session_state['emotion'] = emotion
                st.session_state['page'] = 'input_details'
@@ -143,11 +143,11 @@ def show_details_input_page():
             st.session_state['filtered_books'] = filter_books(st.session_state['emotion'], age, location_to_send)
             # Navigate to the recommendations page
             st.session_state['page'] = 'show_recommendations'
-            st.experimental_rerun()
+            st.rerun()
 
     if st.button('Go Back to Emotion Input'):
         st.session_state['page'] = 'input_emotion'
-        st.experimental_rerun()
+        st.rerun()
 
 
 def show_recommendations_page():
